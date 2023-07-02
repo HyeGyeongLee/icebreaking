@@ -188,19 +188,37 @@ const normalQuestion = [
 
 
 export default function normal() {
-    const [modal, setModal] = useState(false);
+    // const [modal, setModal] = useState(false);
 
-    const openDetailModal = () => {
-        setModal(true);
-    }
+    // const openDetailModal = () => {
+    //     setModal(true);
+    // }
 
     return (
-        <>
-        ui는 차차 작업합쉬다
-        <br />
-        <button type="button" onClick={openDetailModal}>normal 모달</button>
+        <div className="bg-[#FFFBDC] lg:mx-96 rounded-2xl py-2 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+        
+        <div className="flex">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 text-[#2A52BE]">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>
 
-        <ReviewModal modal={modal} setModal={setModal}/>
-        </>
+        <h1 className="text-[#2A52BE]">MIDDLE</h1>
+        </div>
+        
+        <div className="border-b-2 border-[#2A52BE]"></div>
+
+        <div className="bg-[#2A52BE] rounded-xl m-4 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+        
+            <div className="bg-[#D9D9D9]/30 border-y-4 border-y-[#FFFBDC]-500 py-10 mx-12 text-center">
+                <p>하단의 버튼을 눌러주세요!<br/> Press the button at the bottom</p>
+            </div>
+
+            <img src="../icon_button.png" className="mt-12 w-36 h-36"/>
+        </div>
+        <br />
+        {/* <button type="button" onClick={openDetailModal}>normal 모달</button>
+
+        <ReviewModal modal={modal} setModal={setModal}/> */}
+        </div>
     )
 }
