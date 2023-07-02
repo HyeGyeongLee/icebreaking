@@ -113,11 +113,11 @@ export default function Hard() {
 
       <div className="bg-[#2A52BE] rounded-xl m-4 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
       
-          <div className="bg-[#D9D9D9]/30 border-y-4 border-y-[#FFFBDC]-500 py-10 mx-12 text-center">
+          <div className="bg-[#D9D9D9]/30 border-y-4 border-y-[#FFFBDC]-500 py-10 mx-12 text-center py-32">
               <p className="text-[#FFFFFF]">하단의 버튼을 눌러주세요!<br/> Press the button at the bottom</p>
           </div>
 
-          <img src="../icon_button.png" className="mt-12 w-36 h-36"/>
+          <img src="../icon_button.png" className="mt-12 w-36 h-36 translate-x-[75%]"/>
       </div>
       <br />
       {/* <button type="button" onClick={openDetailModal}>normal 모달</button>
