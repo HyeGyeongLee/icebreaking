@@ -202,7 +202,7 @@ export default function normal() {
             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
         </svg>
 
-        <h1 className="text-[#2A52BE]">MIDDLE</h1>
+        <h1 className="text-[#2A52BE]">NORMAL</h1>
         </div>
         
         <div className="border-b-2 border-[#2A52BE]"></div>
