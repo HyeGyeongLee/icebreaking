@@ -11,7 +11,7 @@ export default function Question() {
     return (
         <div className="bg-[#FFFBDC] lg:mx-96 py-2 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
         
-        <div className="flex">
+        <div className="grid grid-cols-3 place-content-center">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 text-[#2A52BE]">
             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
         </svg>
@@ -63,8 +63,6 @@ export default function Question() {
                 게임을 하러 가볼까요?
                 </p>
             </div>
-
-            <img src="../icon_button.png" className="mt-12 w-36 h-36"/>
         </div>
         <br />
         {/* <button type="button" onClick={openDetailModal}>normal 모달</button>
