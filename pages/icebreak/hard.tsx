@@ -101,12 +101,12 @@ export default function Hard() {
     return (
       <div className="bg-[#FFFBDC] lg:mx-96 py-2 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
       
-      <div className="grid grid-cols-3 place-content-center">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 text-[#2A52BE]">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-      </svg>
+      <div className="grid grid-cols-3 place-content-center py-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 text-[#2A52BE] ml-2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>
 
-      <h1 className="text-[#2A52BE]">HARD</h1>
+        <h1 className="text-[#2A52BE]">HARD</h1>
       </div>
       
       <div className="border-b-2 border-[#2A52BE]"></div>
