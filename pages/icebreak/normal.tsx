@@ -213,7 +213,9 @@ export default function normal() {
                 <p className="text-[#FFFFFF]">하단의 버튼을 눌러주세요!<br/> Press the button at the bottom</p>
             </div>
 
-            <img src="../icon_button.png" className="mt-12 w-36 h-36 translate-x-[75%]"/>
+            <div className="grid place-content-center">
+                <img src="../icon_button.png" className="mt-12 w-36 h-36"/>
+            </div>
         </div>
         <br />
         {/* <button type="button" onClick={openDetailModal}>normal 모달</button>
