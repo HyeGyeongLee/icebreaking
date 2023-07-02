@@ -12,7 +12,10 @@ export default function Ice() {
     return (
         <div className="bg-[#FFFBDC] lg:mx-96 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
             <img src="./icebreaking_title.png" className="w-full"/>
-            <img src="./question_button.png" className="w-32"/>
+            
+            <Link href="/icebreak/question">
+              <img src="./question_button.png" className="w-32"/>
+            </Link>
             <br />
               <Link href="/icebreak/normal">
                 <img src="./normal_button.png" className="w-full"/>
