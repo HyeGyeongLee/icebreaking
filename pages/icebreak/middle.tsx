@@ -8,17 +8,17 @@ export default function Middle() {
 
     const middleQuestion = [
         {
-            detail: '이상형이 무엇인가요? \n 여기서 제일 이상형에 가까운 사람이 있나요?',
+            detail: '이상형이 무엇인가요? \n 여기서 제일 이상형에 \n 가까운 사람이 있나요?',
             imageUrl:
             '',
         },
         {
-            detail: '(전)연인과 가장 예뻤던 추억이 있나요? \n 어쩌다 헤어졌나요?',
+            detail: '(전)연인과 가장 예뻤던 \n 추억이 있나요? \n 어쩌다 헤어졌나요?',
             imageUrl:
             '',
         },
         {
-            detail: '사랑에 빠졌을 떄 상대방에게 어떻게 플러팅을 하는 편인가요?',
+            detail: '사랑에 빠졌을 떄 상대방에게 \n 어떻게 플러팅을 하는 편인가요?',
             imageUrl:
             '',
         },
@@ -33,12 +33,12 @@ export default function Middle() {
             '',
         },
         {
-            detail: '둘이서 밥먹으면 가장 어색할 것 같은 사람은?',
+            detail: '둘이서 밥먹으면 가장 어색할 것 \n 같은 사람은?',
             imageUrl:
             '',
         },
         {
-            detail: '환승이별 vs 잠수이별 뭐가 더 나쁘다고 생각하나요?',
+            detail: '환승이별 \n vs \n 잠수이별 \n 뭐가 더 나쁘다고 생각하나요?',
             imageUrl:
             '',
         },
@@ -58,7 +58,7 @@ export default function Middle() {
             '',
         },
         {
-            detail: '연인이 헤어지자고 하면 붙잡는 편인가요? \n 아니면 먼저 헤어지자고 말하는 편인가요?',
+            detail: '연인이 헤어지자고 하면 \n 붙잡는 편인가요? \n 먼저 헤어지자고 말하는 편인가요?',
             imageUrl:
             '',
         },
@@ -83,7 +83,7 @@ export default function Middle() {
             '',
         },
         {
-            detail: '연인에게 가장 다정할 것 같은 사람은?',
+            detail: '연인에게 가장 다정할 것 같은 \n 사람은?',
             imageUrl:
             '',
         },
@@ -103,17 +103,17 @@ export default function Middle() {
             '',
         },
         {
-            detail: '상대방에게 했던 말들 중 가장 잔인했던 말이 있나요?',
+            detail: '상대방에게 했던 말들 중 가장 \n 잔인했던 말이 있나요?',
             imageUrl:
             '',
         },
         {
-            detail: '부모님 모르게 했었던, 가장 미친 짓은 무엇인가요?',
+            detail: '부모님 모르게 했었던 \n가장 미친 짓은 \n 무엇인가요?',
             imageUrl:
             '',
         },
         {
-            detail: '지인들 중 가장 좋아하는 사람은 누구입니까? \n 이유가 뭔가요?',
+            detail: '지인들 중 가장 좋아하는 사람은 \n 누구입니까? \n 이유가 뭔가요?',
             imageUrl:
             '',
         },
@@ -155,11 +155,11 @@ export default function Middle() {
         
             <div className="bg-[#D9D9D9]/30 border-y-4 border-y-[#FFFBDC]-500 py-10 mx-12 text-center py-32">
                 {randomQuestion ? (
-                    <div>
+                    <div className="px-2 text-lg">
                         <p className="text-[#FFFFFF] whitespace-pre-line">{randomQuestion.detail}</p>
                     </div>
                 ) : (
-                    <p className="text-[#FFFFFF]">하단의 버튼을 눌러주세요!<br/> Press the button at the bottom</p>
+                    <p className="text-[#FFFFFF] px-2 text-lg">하단의 버튼을 눌러주세요!<br/> Press the button at the bottom</p>
                 )}
             </div>
 

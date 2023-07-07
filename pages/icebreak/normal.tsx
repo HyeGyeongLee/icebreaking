@@ -250,7 +250,7 @@ const selectRandomQuestion = () => {
                         <p className="text-[#FFFFFF] whitespace-pre-line">{randomQuestion.detail}</p>
                     </div>
                 ) : (
-                    <p className="text-[#FFFFFF]">하단의 버튼을 눌러주세요!<br/> Press the button at the bottom</p>
+                    <p className="text-[#FFFFFF] px-2 text-lg">하단의 버튼을 눌러주세요!<br/> Press the button at the bottom</p>
                 )}
 
 
