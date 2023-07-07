@@ -10,7 +10,7 @@ const includedFeatures = [
 
 export default function Ice() {
     return (
-      <div className="relative bg-[#FFFBDC] h-screen xl:h-full lg:h-full md:h-full sm:h-full w-full">
+      <div className="relative h-screen xl:h-full lg:h-full md:h-full sm:h-full w-full">
         <div className="lg:mx-96 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center">
             
             <div className="relative bg-[#FFFBDC]">
