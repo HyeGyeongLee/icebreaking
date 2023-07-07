@@ -10,30 +10,29 @@ const includedFeatures = [
 
 export default function Ice() {
     return (
-      <div className="relative bg-[#FFFBDC] h-screen w-full">
-        <div className="lg:mx-96 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+      <div className="relative bg-[#FFFBDC] h-screen xl:h-full lg:h-full md:h-full sm:h-full w-full">
+        <div className="lg:mx-96 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center">
             
-            <div>
-              <img src="./icebreaking_title.png" className="w-full"/>
-            </div>
+            <div className="relative bg-[#FFFBDC]">
+              <img src="./icebreaking_title.png" className=""/>
+              <div className="relative mx-12 -my-52 sm:my-0 md:my-0 lg:my-0 xl:my-0">
+                  <Link href="/icebreak/question">
+                    <img src="./question_button.png" className="w-16 -pt-2 pb-6"/>
+                  </Link>
 
-            <div className="absolute mx-12 -my-52">
-              <Link href="/icebreak/question">
-                <img src="./question_button.png" className="w-16 -pt-2 pb-6"/>
-              </Link>
-
-              <Link href="/icebreak/normal">
-                <img src="./normal_button.png" className="w-full "/>
-              </Link>
-              <br />
-              <Link href="/icebreak/middle">
-                <img src="./middle_button.png" className="w-full"/>
-              </Link>
-              <br />
-              <Link href="/icebreak/hard">
-                <img src="./hard_button.png" className="w-full"/>
-              </Link>
-            </div>
+                  <Link href="/icebreak/normal">
+                    <img src="./normal_button.png" className="w-full"/>
+                  </Link>
+                  <br />
+                  <Link href="/icebreak/middle">
+                    <img src="./middle_button.png" className="w-full"/>
+                  </Link>
+                  <br />
+                  <Link href="/icebreak/hard">
+                    <img src="./hard_button.png" className="w-full"/>
+                  </Link>
+              </div>
+              </div>
         </div>
       </div>
     )
