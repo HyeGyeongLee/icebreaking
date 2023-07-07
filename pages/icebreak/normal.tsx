@@ -228,12 +228,6 @@ const selectRandomQuestion = () => {
   setRandomQuestion(selectedQuestion);
 };
 
-// const formatDetail = (detail) => {
-//     // 특정 문자를 검사하고 줄바꿈 처리
-//     return detail.replace(/\?/g, <br />);
-//   };
-
-
     return (
         <div className="bg-[#FFFBDC] lg:mx-96 py-2 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
         

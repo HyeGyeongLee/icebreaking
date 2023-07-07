@@ -2,18 +2,18 @@ import { useState } from "react"
 import ReviewModal from "../../components/ReviewModal";
 import { useRouter } from 'next/router'
 
-const middleQuestion = [
-    {
-      id: 0,
-      category: 'Middle',
-      question: [
+export default function Middle() {
+
+    const router = useRouter();
+
+    const middleQuestion = [
         {
-            detail: '이상형이 무엇인가요? 여기서 제일 이상형에 가까운 사람이 있나요?',
+            detail: '이상형이 무엇인가요? \n 여기서 제일 이상형에 가까운 사람이 있나요?',
             imageUrl:
             '',
         },
         {
-            detail: '(전)연인과 가장 예뻤던 추억이 있나요? 어쩌다 헤어졌나요?',
+            detail: '(전)연인과 가장 예뻤던 추억이 있나요? \n 어쩌다 헤어졌나요?',
             imageUrl:
             '',
         },
@@ -23,12 +23,12 @@ const middleQuestion = [
             '',
         },
         {
-            detail: '현재 호감이 가는 사람이 있나요? 어디서 만나셨나요?',
+            detail: '현재 호감이 가는 사람이 있나요? \n 어디서 만나셨나요?',
             imageUrl:
             '',
         },
         {
-            detail: '지금 입은 옷 스타일이 제일 당신의 취향인 사람이 있나요? 누구인가요?',
+            detail: '지금 입은 옷 스타일이 제일 당신의 취향인 사람이 있나요? \n 누구인가요?',
             imageUrl:
             '',
         },
@@ -58,7 +58,7 @@ const middleQuestion = [
             '',
         },
         {
-            detail: '연인이 헤어지자고 하면 붙잡는 편인가요? 아니면 먼저 헤어지자고 말하는 편인가요?',
+            detail: '연인이 헤어지자고 하면 붙잡는 편인가요? \n 아니면 먼저 헤어지자고 말하는 편인가요?',
             imageUrl:
             '',
         },
@@ -113,7 +113,7 @@ const middleQuestion = [
             '',
         },
         {
-            detail: '지인들 중 가장 좋아하는 사람은 누구입니까? 이유가 뭔가요?',
+            detail: '지인들 중 가장 좋아하는 사람은 누구입니까? \n 이유가 뭔가요?',
             imageUrl:
             '',
         },
@@ -122,19 +122,18 @@ const middleQuestion = [
             imageUrl:
             '',
         },
-      ],
-    },
     // More projects...
 ]
 
-export default function Middle() {
-    const [modal, setModal] = useState(false);
 
-    const openDetailModal = () => {
-        setModal(true);
-    }
+    const [randomQuestion, setRandomQuestion] = useState(null);
 
-    const router = useRouter();
+    // 랜덤 질문 선택 함수
+    const selectRandomQuestion = () => {
+        const randomIndex = Math.floor(Math.random() * middleQuestion.length);
+        const selectedQuestion = middleQuestion[randomIndex];
+        setRandomQuestion(selectedQuestion);
+    };
 
     return (
         <div className="bg-[#FFFBDC] lg:mx-96 py-2 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
@@ -155,10 +154,16 @@ export default function Middle() {
         <div className="bg-[#2A52BE] rounded-xl m-4 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
         
             <div className="bg-[#D9D9D9]/30 border-y-4 border-y-[#FFFBDC]-500 py-10 mx-12 text-center py-32">
-                <p className="text-[#FFFFFF]">하단의 버튼을 눌러주세요!<br/> Press the button at the bottom</p>
+                {randomQuestion ? (
+                    <div>
+                        <p className="text-[#FFFFFF] whitespace-pre-line">{randomQuestion.detail}</p>
+                    </div>
+                ) : (
+                    <p className="text-[#FFFFFF]">하단의 버튼을 눌러주세요!<br/> Press the button at the bottom</p>
+                )}
             </div>
 
-            <div className="grid place-content-center">
+            <div className="grid place-content-center" onClick={() => selectRandomQuestion()}>
                 <img src="../icon_button.png" className="mt-12 w-36 h-36"/>
             </div>
         </div>
