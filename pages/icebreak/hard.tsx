@@ -52,7 +52,7 @@ export default function Hard() {
                 '',
           },
           {
-              detail: '사람들에게 말하지 못하는 나만의 성 취향이 있다 vs 없다.',
+              detail: '사람들에게 말하지 못하는 나만의 성 취향이 있다 \n vs \n 없다.',
               imageUrl:
                 '',
           },
