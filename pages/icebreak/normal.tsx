@@ -14,7 +14,7 @@ export default function normal() {
         },
         {
             id : 1,
-            detail: '요즘 가장 즐겨듣는 노래는 무엇인가요? \n 좋아하는 가수는 누구인가요?',
+            detail: '요즘 가장 즐겨듣는 \n 노래는 무엇인가요? \n 좋아하는 가수는 누구인가요?',
             imageUrl:
             '',
         },
@@ -26,7 +26,7 @@ export default function normal() {
         },
         {
             id : 3,
-            detail: '올해 가장 재밌게 본 영화가 있나요? \n 제일 좋아하는 영화는 무엇인가요?',
+            detail: '올해 가장 재밌게 본 \n 영화가 있나요? \n 제일 좋아하는 영화는 무엇인가요?',
             imageUrl:
             '',
         },
@@ -44,13 +44,13 @@ export default function normal() {
         },
         {
             id : 6,
-            detail: '친구들이 당신을 부르는 별명이 있나요?',
+            detail: '친구들이 당신을 부르는 \n 별명이 있나요?',
             imageUrl:
             '',
         },
         {
             id : 7,
-            detail: '공연이나 전시회를 좋아하나요? \n 제일 좋았던 공연이나 전시회가 무엇인가요?',
+            detail: '공연이나 전시회를 좋아하나요? \n 제일 좋았던 공연이나 전시회가 \n 무엇인가요?',
             imageUrl:
             '',
         },
@@ -74,7 +74,7 @@ export default function normal() {
         },
         {
             id : 11,
-            detail: '사진 찍는 걸 좋아하시나요? \n 갤러리에 많은 비중을 차지하는 사진은 무엇인가요?',
+            detail: '사진 찍는 걸 좋아하시나요? \n 갤러리에 많은 비중을 차지하는 \n 사진은 무엇인가요?',
             imageUrl:
             '',
         },
@@ -86,13 +86,13 @@ export default function normal() {
         },
         {
             id : 13,
-            detail: '당신이 스스로 가장 강점이라고 생각하는 부분을 자랑해주세요. \n 외모든 내면적으로든 상관 없습니다.',
+            detail: '당신이 스스로 가장 강점이라고 \n 생각하는 부분을 자랑해주세요. \n 외모든 내면적으로든 \n 상관 없습니다.',
             imageUrl:
             '',
         },
         {
             id : 14,
-            detail: '취미가 있나요? \n 새롭게 배우고 싶은 분야가 무엇인가요?',
+            detail: '취미가 있나요? \n 새롭게 배우고 싶은 분야가 \n 무엇인가요?',
             imageUrl:
             '',
         },
@@ -104,7 +104,7 @@ export default function normal() {
         },
         {
             id : 16,
-            detail: '환생을 믿나요? \n 다시 태어난다면 누구로 태어나고 싶나요?',
+            detail: '환생을 믿나요? \n 다시 태어난다면 누구로 \n 태어나고 싶나요?',
             imageUrl:
             '',
         },
@@ -116,13 +116,13 @@ export default function normal() {
         },
         {
             id : 18,
-            detail: '제일 첫인상이 좋았던 사람이 있나요? \n 이유는 무엇인가요?',
+            detail: '제일 첫인상이 좋았던 \n 사람이 있나요? \n 이유는 무엇인가요?',
             imageUrl:
             '',
         },
         {
             id : 19,
-            detail: '당신의 왼쪽에 앉은 사람의 첫인상이 어땠는지 말해주세요.',
+            detail: '당신의 왼쪽에 앉은 사람의 \n 첫인상이 어땠는지 말해주세요.',
             imageUrl:
             '',
         },
@@ -134,19 +134,19 @@ export default function normal() {
         },
         {
             id : 21,
-            detail: '칭찬을 잘하시나요? \n 오른쪽에 앉은 사람에게 칭찬을 해주세요.',
+            detail: '칭찬을 잘하시나요? \n 오른쪽에 앉은 사람에게 칭찬을 \n 해주세요.',
             imageUrl:
             '',
         },
         {
             id : 22,
-            detail: '이상형이 무엇인가요? \n 외적으로 내적으로 전부 말해주세요.',
+            detail: '이상형이 무엇인가요? \n 외적으로 내적으로 \n 전부 말해주세요.',
             imageUrl:
             '',
         },
         {
             id : 23,
-            detail: '(전)연인에게 들었던 애칭이 있나요?',
+            detail: '(전)연인에게 들었던 \n 애칭이 있나요?',
             imageUrl:
             '',
         },
@@ -164,31 +164,31 @@ export default function normal() {
         },
         {
             id : 26,
-            detail: '사랑에 빠지면 상대방에서 어떻게 행동하는 편인가요?',
+            detail: '사랑에 빠지면 상대방에서 \n 어떻게 행동하는 편인가요?',
             imageUrl:
             '',
         },
         {
             id : 27,
-            detail: '사랑을 주는 것과 사랑을 받는 것 어떤 것이 더 쉽다고 생각하나요? \n 더 좋아하는게 있나요?',
+            detail: '사랑을 주는 것과 사랑을 받는 것 \n 어떤 것이 더 쉽다고 생각하나요? \n 더 좋아하는게 있나요?',
             imageUrl:
             '',
         },
         {
             id : 28,
-            detail: '상대방이 연애 경험이 많은게 좋은가요? \n 적은게 좋은가요?',
+            detail: '상대방이 연애 경험이 \n 많은게 좋은가요? \n 적은게 좋은가요?',
             imageUrl:
             '',
         },
         {
             id : 29,
-            detail: '연애할 때 나이 차이 몇살까지 가능한가요?',
+            detail: '연애할 때 나이 차이 몇살까지 \n 가능한가요?',
             imageUrl:
             '',
         },
         {
             id : 30,
-            detail: '내가 생각했던 첫인상과 완전히 다른 사람이 있나요? \n 이유가 뭔가요?',
+            detail: '내가 생각했던 첫인상과 완전히 \n 다른 사람이 있나요? \n 이유가 뭔가요?',
             imageUrl:
             '',
         },
@@ -206,13 +206,13 @@ export default function normal() {
         },
         {
             id : 33,
-            detail: '당신의 숨듣명 한 곡을 추천해주세요.',
+            detail: '당신의 숨듣명 \n 한 곡을 추천해주세요.',
             imageUrl:
             '',
         },
         {
             id : 34,
-            detail: '당신이 중요하게 생각하는 신념이나 조언이 있나요?',
+            detail: '당신이 중요하게 생각하는 \n 신념이나 조언이 있나요?',
             imageUrl:
             '',
         },
@@ -246,7 +246,7 @@ const selectRandomQuestion = () => {
         <div className="bg-[#2A52BE] rounded-xl m-4 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
             <div className="bg-[#D9D9D9]/30 border-y-4 border-y-[#FFFBDC]-500 py-10 mx-12 text-center py-32">
                 {randomQuestion ? (
-                    <div>
+                    <div className="px-2 text-lg">
                         <p className="text-[#FFFFFF] whitespace-pre-line">{randomQuestion.detail}</p>
                     </div>
                 ) : (
