@@ -12,17 +12,17 @@ export default function Hard() {
               '',
           },
           {
-              detail: '남들에게 말 못할 관계를 즐겨 본 적이 있나요?',
+              detail: '남들에게 말 못할 관계를 \n 즐겨 본 적이 있나요?',
               imageUrl:
               '',
           },
           {
-              detail: '상대방에게 가장 매력을 느끼는 신체 부위가 있나요?',
+              detail: '상대방에게 가장 매력을 느끼는 \n 신체 부위가 있나요?',
               imageUrl:
                 '',
           },
           {
-              detail: '이성과 잠자리를 하기 위한 플러팅이 있나요?',
+              detail: '이성과 잠자리를 하기 위한 \n 플러팅이 있나요?',
               imageUrl:
                 '',
           },
@@ -32,7 +32,7 @@ export default function Hard() {
                 '',
           },
           {
-              detail: '만취 상태에서 실수로 스퀸십을 한 적이 있나요? \n 그 후에 어떻게 수습했나요?',
+              detail: '만취 상태에서 실수로 \n 스퀸십을 한 적이 있나요? \n 그 후에 어떻게 수습했나요?',
               imageUrl:
                 '',
           },
@@ -42,7 +42,7 @@ export default function Hard() {
                 '',
           },
           {
-              detail: '절친이 살인을 저질러 당신에게 숨겨달라고 찾아왔습니다. \n 어떻게 행동 하실건가요?',
+              detail: '절친이 살인을 저질러 당신에게 \n 숨겨달라고 찾아왔습니다. \n 어떻게 행동 하실건가요?',
               imageUrl:
                 '',
           },
@@ -52,12 +52,12 @@ export default function Hard() {
                 '',
           },
           {
-              detail: '사람들에게 말하지 못하는 나만의 성 취향이 있다 \n vs \n 없다.',
+              detail: '사람들에게 말하지 못하는 \n 나만의 성 취향이 있다 \n vs \n 없다.',
               imageUrl:
                 '',
           },
           {
-              detail: '절친의 연인 \n or \n 썸인 상대에게 호감을 가진 적이 있다.',
+              detail: '절친의 연인 \n or \n 썸인 상대에게 \n 호감을 가진 적이 있다.',
               imageUrl:
                 '',
           },
@@ -72,7 +72,7 @@ export default function Hard() {
                 '',
           },
           {
-              detail: '바람피운 걸 평생 비밀로 하는 애인 (평생 바람 핌) \n vs \n 바람피운 걸 고백하고 봐달라는 애인 (이후로 바람 안 핌)',
+              detail: '바람피운 걸 평생 비밀로 하는 애인 (평생 바람 핌) \n vs \n 바람피운 걸 고백하고 \n 봐달라는 애인 (이후로 바람 안 핌)',
               imageUrl:
                 '',
           },
@@ -82,7 +82,7 @@ export default function Hard() {
                 '',
           },
           {
-              detail: '상대방의 어느 포인트에 섹시하다고 생각하나요?',
+              detail: '상대방의 어느 포인트에 \n 섹시하다고 생각하나요?',
               imageUrl:
                 '',
           },
@@ -117,11 +117,11 @@ export default function Hard() {
       
         <div className="bg-[#D9D9D9]/30 border-y-4 border-y-[#FFFBDC]-500 py-10 mx-12 text-center py-32">
             {randomQuestion ? (
-                <div>
+                <div className="px-2 text-lg">
                     <p className="text-[#FFFFFF] whitespace-pre-line">{randomQuestion.detail}</p>
                 </div>
             ) : (
-                <p className="text-[#FFFFFF]">하단의 버튼을 눌러주세요!<br/> Press the button at the bottom</p>
+                <p className="text-[#FFFFFF] px-2 text-lg">하단의 버튼을 눌러주세요!<br/> Press the button at the bottom</p>
             )}
         </div>
 
