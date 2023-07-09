@@ -1,6 +1,7 @@
 import { useState } from "react"
 import ReviewModal from "../../components/ReviewModal";
 import { useRouter } from 'next/router'
+import Modal from '../../components/Modal'
 
 export default function Middle() {
 
@@ -8,7 +9,8 @@ export default function Middle() {
 
     const [randomArray, setRandomArray] = useState('');
     const [usedIndexes, setUsedIndexes] = useState([]);
-
+    const [modal, setModal] = useState(false);
+    
     const middleQuestion = [
         {
             detail: '이상형이 무엇인가요? \n 여기서 제일 이상형에 \n 가까운 사람이 있나요?',
@@ -152,6 +154,7 @@ export default function Middle() {
     setRandomArray(middleQuestion[selectedIndex].detail);
     setUsedIndexes([...usedIndexes, selectedIndex]);
     } else {
+        setModal(true);
         return;
     }
 
@@ -174,6 +177,8 @@ export default function Middle() {
         
         <div className="border-b-2 border-[#2A52BE]"></div>
 
+        <Modal modal={modal} setModal={setModal}/>
+
         <div className="bg-[#2A52BE] rounded-xl m-4 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
         
             <div className="bg-[#D9D9D9]/30 border-y-4 border-y-[#FFFBDC]-500 py-10 mx-12 text-center py-32">
@@ -189,8 +194,8 @@ export default function Middle() {
                 }
             </div>
 
-            <div className="grid place-content-center" onClick={() => getRandomArrayElement()}>
-                <img src="../icon_button.png" className="mt-12 w-36 h-36"/>
+            <div className="grid place-content-center">
+                <img src="../icon_button.png" onClick={() => getRandomArrayElement()} className="mt-12 w-36 h-36"/>
             </div>
         </div>
         <br />
