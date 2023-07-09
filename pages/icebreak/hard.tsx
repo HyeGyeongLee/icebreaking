@@ -4,6 +4,8 @@ import { useRouter } from 'next/router'
 
 export default function Hard() {
     const router = useRouter();
+    const [randomArray, setRandomArray] = useState('');
+    const [usedIndexes, setUsedIndexes] = useState([]);
 
     const hardQuestion = [
           {
@@ -89,14 +91,33 @@ export default function Hard() {
       // More projects...
   ]
 
-    const [randomQuestion, setRandomQuestion] = useState(null);
+  const getRandomArrayElement = () => {
 
-    // 랜덤 질문 선택 함수
-    const selectRandomQuestion = () => {
-        const randomIndex = Math.floor(Math.random() * hardQuestion.length);
-        const selectedQuestion = hardQuestion[randomIndex];
-        setRandomQuestion(selectedQuestion);
-    };
+    if (usedIndexes.length === hardQuestion.length) {
+      // 배열의 모든 요소를 사용한 경우, 초기화합니다.
+      setUsedIndexes([]);
+    }
+
+    // 사용되지 않은 인덱스들을 필터링합니다.
+    const availableIndexes = hardQuestion.map((_, index) => index).filter(
+      (index) => 
+      !usedIndexes.includes(index)
+    );
+
+    // 남은 사용 가능한 인덱스들 중에서 랜덤으로 선택합니다.
+    const randomIndex = Math.floor(Math.random() * availableIndexes.length);
+    const selectedIndex = availableIndexes[randomIndex];
+
+    // 선택한 인덱스의 배열 요소를 출력하고 사용한 인덱스 목록에 추가합니다.
+
+    if(selectedIndex < 35 || selectedIndex > 0) {
+    setRandomArray(hardQuestion[selectedIndex].detail);
+    setUsedIndexes([...usedIndexes, selectedIndex]);
+    } else {
+        return;
+    }
+
+  };
 
     return (
       <div className="bg-[#FFFBDC] lg:mx-96 py-2 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center">
@@ -116,16 +137,19 @@ export default function Hard() {
       <div className="bg-[#2A52BE] rounded-xl m-4 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
       
         <div className="bg-[#D9D9D9]/30 border-y-4 border-y-[#FFFBDC]-500 py-10 mx-12 text-center py-32">
-            {randomQuestion ? (
-                <div className="px-2 text-lg">
-                    <p className="text-[#FFFFFF] whitespace-pre-line">{randomQuestion.detail}</p>
-                </div>
-            ) : (
+            {usedIndexes.length > 35 || usedIndexes.length === 0 ? (
                 <p className="text-[#FFFFFF] px-2 text-lg">하단의 버튼을 눌러주세요!<br/> Press the button at the bottom</p>
-            )}
+                  ) : 
+                  (
+                      <div className="px-2 text-lg">
+                          <p className="text-[#FFFFFF] whitespace-pre-line">{randomArray}</p>
+                      </div>
+                  )
+                
+                }
         </div>
 
-          <div className="grid place-content-center" onClick={() => selectRandomQuestion()}>
+          <div className="grid place-content-center" onClick={() => getRandomArrayElement()}>
             <img src="../icon_button.png" className="mt-12 w-36 h-36"/>
           </div>
       </div>
