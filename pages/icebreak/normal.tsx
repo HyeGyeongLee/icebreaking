@@ -1,11 +1,13 @@
 import { useState } from "react"
 import ReviewModal from "../../components/ReviewModal";
 import { useRouter } from 'next/router'
+import Modal from '../../components/Modal'
 
 export default function normal() {
     const router = useRouter();
     const [randomArray, setRandomArray] = useState('');
     const [usedIndexes, setUsedIndexes] = useState([]);
+    const [modal, setModal] = useState(false);
 
     const normalQuestion = [
             {
@@ -245,6 +247,7 @@ export default function normal() {
     setRandomArray(normalQuestion[selectedIndex].detail);
     setUsedIndexes([...usedIndexes, selectedIndex]);
     } else {
+        setModal(true);
         return;
     }
 
@@ -265,23 +268,24 @@ export default function normal() {
         
         <div className="border-b-2 border-[#2A52BE]"></div>
 
+        <Modal modal={modal} setModal={setModal}/>
+
         <div className="bg-[#2A52BE] rounded-xl m-4 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
             <div className="bg-[#D9D9D9]/30 border-y-4 border-y-[#FFFBDC]-500 py-10 mx-12 text-center py-32">
-                {usedIndexes.length > 35 || usedIndexes.length === 0 ? (
-                    <p className="text-[#FFFFFF] px-2 text-lg">하단의 버튼을 눌러주세요!<br/> Press the button at the bottom</p>
-                ) : 
-                (
-                    <div className="px-2 text-lg">
-                        <p className="text-[#FFFFFF] whitespace-pre-line">{randomArray}</p>
-                    </div>
-                )
-                
+                {
+                    usedIndexes.length > 35 || usedIndexes.length === 0 ? (
+                        <p className="text-[#FFFFFF] px-2 text-lg">하단의 버튼을 눌러주세요!<br/> Press the button at the bottom</p>
+                    ) : 
+                    (
+                        <div className="px-2 text-lg">
+                            <p className="text-[#FFFFFF] whitespace-pre-line">{randomArray}</p>
+                        </div>
+                    )
                 }
             </div>
-
             {/* 하단의 버튼 */}
-            <div className="grid place-content-center" onClick={() => getRandomArrayElement()}>
-                <img src="../icon_button.png" className="mt-12 w-36 h-36"/>
+            <div className="grid place-content-center">
+                <img src="../icon_button.png" onClick={() => getRandomArrayElement()} className="mt-12 w-36 h-36"/>
             </div>
         </div>
         <br />
