@@ -1,9 +1,8 @@
-import { createClient, SupabaseClient } from '@supabase/supabase-js';
+import { createClient } from "@supabase/supabase-js";
 
-const supabaseUrl: string = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
-const supabaseServerKey: string = process.env.NEXT_PUBLIC_SUPABASE_KEY || '';
+const supabaseUrl = process.env.VITE_REACT_APP_SUPABASE_URL as string;
+const supabaseAnonKey = process.env.VITE_REACT_APP_ANON_KEY as string;
 
-const supabase = createClient(supabaseUrl, supabaseServerKey);
+export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
-// Export for usage by the rest of the app
-export { supabase }
+export default supabase;
