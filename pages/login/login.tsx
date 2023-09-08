@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState, useRef } from "react";
 import { supabase } from "../../lib/supabase";
 import classNames from "classnames";
