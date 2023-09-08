@@ -21,7 +21,7 @@ type SignUpFieldProps = {
   };
 
   
-  const SignUp: React.FC = (props) => {
+  const SignUp = () => {
     const [loading, setLoading] = useState(false);
   
     const [values, handleChange, resetFormFields] =
