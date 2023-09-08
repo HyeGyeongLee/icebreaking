@@ -21,7 +21,7 @@ type SignUpFieldProps = {
   };
 
   
-  const Login: React.FC = (props) => {
+  const SignUp: React.FC = (props) => {
     const [loading, setLoading] = useState(false);
   
     const [values, handleChange, resetFormFields] =
@@ -142,4 +142,4 @@ type SignUpFieldProps = {
     )
   }
   
-  export default Login;
+  export default SignUp;
