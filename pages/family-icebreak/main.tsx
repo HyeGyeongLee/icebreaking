@@ -17,11 +17,10 @@ export default function Ice() {
             <div className="relative bg-[#FFFBDC] h-screen sm:pb-[1200px] md:pb-[1200px] lg:pb-[1200px] xl:pb-[1200px]">
               <img src="../icebreaking_title.png"/>
               <div className="relative mx-12 -my-52 sm:-my-72 md:-my-72 lg:-my-72 xl:-my-72">
-                  <div className="flex">
-                    가족  / 준비중 입니다.
-                    <Link href="/icebreak/question" >
-                      <img src="./question_button.png" className="w-16 -pt-2 pb-6"/>
-                    </Link>
+                  <div className="flex mb-16">
+                    <div className="">
+                      가족 아이콘 준비중
+                    </div>
                     <Menu as="div" className="inline-block text-left mt-[10px] absolute right-0">
                       <div>
                         <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
@@ -85,17 +84,10 @@ export default function Ice() {
                       </Transition>
                     </Menu>
                   </div>
-                  {/* <Link href="/icebreak/normal">
-                    <img src="./normal_button.png" className="w-full"/>
+                  <Link href="/family-icebreak/common">
+                    <img src="../normal_button.png" className="w-full"/>
                   </Link>
-                  <br />
-                  <Link href="/icebreak/middle">
-                    <img src="./middle_button.png" className="w-full"/>
-                  </Link>
-                  <br />
-                  <Link href="/icebreak/hard">
-                    <img src="./hard_button.png" className="w-full"/>
-                  </Link> */}
+                  
               </div>
               </div>
         </div>
