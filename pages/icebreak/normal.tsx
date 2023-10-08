@@ -221,8 +221,20 @@ export default function normal() {
                 '',
             },
             {
-                id : 34,
+                id : 35,
                 detail: '새로운 모임에서 새로운 인연을 깊게 사귈 생각이 있나요?',
+                imageUrl:
+                '',
+            },
+            {
+                id : 36,
+                detail: '아침형 인간인가요? 보통 주말에는 몇시에 일어나세요?',
+                imageUrl:
+                '',
+            },
+            {
+                id : 37,
+                detail: '게임을 좋아하시나요?',
                 imageUrl:
                 '',
             },

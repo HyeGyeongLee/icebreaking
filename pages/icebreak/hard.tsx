@@ -21,7 +21,7 @@ export default function Hard() {
               '',
           },
           {
-              detail: '상대방에게 가장 매력을 느끼는 \n 신체 부위가 있나요?',
+              detail: '상대방에게 가장 성적 매력을 느끼는 \n 신체 부위가 있나요?',
               imageUrl:
                 '',
           },
@@ -89,6 +89,36 @@ export default function Hard() {
               detail: '상대방의 어느 포인트에 \n 섹시하다고 생각하나요?',
               imageUrl:
                 '',
+          },
+          {
+            detail: '현재 살고 있는 집의 보증금/월세/전세 얼마인가요? 자가인가요?',
+            imageUrl:
+              '',
+          },
+          {
+            detail: '현 자산이 얼마인가요?',
+            imageUrl:
+              '',
+          },
+          {
+            detail: '가장 최근 스킨쉽은 언제고 어떤 스킨쉽인가요?',
+            imageUrl:
+              '',
+          },
+          {
+            detail: '돈 문제를 겪은 적이 있나요? 어떤 문제였나요? 어떻게 해결했나요?',
+            imageUrl:
+              '',
+          },
+          {
+            detail: '결혼 하고 싶었던 예전 연인이 있었나요?',
+            imageUrl:
+              '',
+          },
+          {
+            detail: '결혼에 대한 로망이 있나요? 한가지 말해주세요.',
+            imageUrl:
+              '',
           },
       // More projects...
   ]

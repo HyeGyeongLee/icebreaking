@@ -132,6 +132,11 @@ export default function Middle() {
             imageUrl:
             '',
         },
+        {
+            detail: '로또에 당첨된다면 제일 먼저 어떤 것에 돈을 사용하실 것인가요?ㄴ',
+            imageUrl:
+            '',
+        },
     // More projects...
 ]
 
