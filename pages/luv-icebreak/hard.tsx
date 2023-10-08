@@ -1,0 +1,197 @@
+import { useState } from "react"
+import ReviewModal from "../../components/ReviewModal";
+import { useRouter } from 'next/router'
+import Modal from '../../components/Modal'
+
+export default function Hard() {
+    const router = useRouter();
+    const [randomArray, setRandomArray] = useState('');
+    const [usedIndexes, setUsedIndexes] = useState([]);
+    const [modal, setModal] = useState(false);
+
+    const hardQuestion = [
+          {
+              detail: '동성에게 호감을 느낀적이 있나요?',
+              imageUrl:
+              '',
+          },
+          {
+              detail: '남들에게 말 못할 관계를 \n 즐겨 본 적이 있나요?',
+              imageUrl:
+              '',
+          },
+          {
+              detail: '상대방에게 가장 성적 매력을 느끼는 \n 신체 부위가 있나요?',
+              imageUrl:
+                '',
+          },
+          {
+              detail: '이성과 잠자리를 하기 위한 \n 플러팅이 있나요?',
+              imageUrl:
+                '',
+          },
+          {
+              detail: '여러 사람과 썸 이상을 경험 해 본 적이 있나요?',
+              imageUrl:
+                '',
+          },
+          {
+              detail: '만취 상태에서 실수로 \n 스퀸십을 한 적이 있나요? \n 그 후에 어떻게 수습했나요?',
+              imageUrl:
+                '',
+          },
+          {
+              detail: '여기서 제일 섹시하게 생긴 사람은? \n 이유가 뭔가요?',
+              imageUrl:
+                '',
+          },
+          {
+              detail: '절친이 살인을 저질러 당신에게 \n 숨겨달라고 찾아왔습니다. \n 어떻게 행동 하실건가요?',
+              imageUrl:
+                '',
+          },
+          {
+              detail: '마지막으로 울었던게 언제고, \n 왜 울었나요?',
+              imageUrl:
+                '',
+          },
+          {
+              detail: '사람들에게 말하지 못하는 \n 나만의 성 취향이 있다 \n vs \n 없다.',
+              imageUrl:
+                '',
+          },
+          {
+              detail: '절친의 연인 \n or \n 썸인 상대에게 \n 호감을 가진 적이 있다.',
+              imageUrl:
+                '',
+          },
+          {
+              detail: '처음 본 이성과 키스 할 수 있나요?',
+              imageUrl:
+                '',
+          },
+          {
+              detail: '이성친구과 1박2일 하는 애인 \n vs \n (구)연인과 술 마시는 애인',
+              imageUrl:
+                '',
+          },
+          {
+              detail: '바람피운 걸 평생 비밀로 하는 애인 (평생 바람 핌) \n vs \n 바람피운 걸 고백하고 \n 봐달라는 애인 (이후로 바람 안 핌)',
+              imageUrl:
+                '',
+          },
+          {
+              detail: '키스 잘할 것 같은 사람은?',
+              imageUrl:
+                '',
+          },
+          {
+              detail: '상대방의 어느 포인트에 \n 섹시하다고 생각하나요?',
+              imageUrl:
+                '',
+          },
+          {
+            detail: '현재 살고 있는 집의 보증금/월세/전세 얼마인가요? 자가인가요?',
+            imageUrl:
+              '',
+          },
+          {
+            detail: '현 자산이 얼마인가요?',
+            imageUrl:
+              '',
+          },
+          {
+            detail: '가장 최근 스킨쉽은 언제고 어떤 스킨쉽인가요?',
+            imageUrl:
+              '',
+          },
+          {
+            detail: '돈 문제를 겪은 적이 있나요? 어떤 문제였나요? 어떻게 해결했나요?',
+            imageUrl:
+              '',
+          },
+          {
+            detail: '결혼 하고 싶었던 예전 연인이 있었나요?',
+            imageUrl:
+              '',
+          },
+          {
+            detail: '결혼에 대한 로망이 있나요? 한가지 말해주세요.',
+            imageUrl:
+              '',
+          },
+      // More projects...
+  ]
+
+  const getRandomArrayElement = () => {
+
+    if (usedIndexes.length === hardQuestion.length) {
+      // 배열의 모든 요소를 사용한 경우, 초기화합니다.
+      setUsedIndexes([]);
+    }
+
+    // 사용되지 않은 인덱스들을 필터링합니다.
+    const availableIndexes = hardQuestion.map((_, index) => index).filter(
+      (index) => 
+      !usedIndexes.includes(index)
+    );
+
+    // 남은 사용 가능한 인덱스들 중에서 랜덤으로 선택합니다.
+    const randomIndex = Math.floor(Math.random() * availableIndexes.length);
+    const selectedIndex = availableIndexes[randomIndex];
+
+    // 선택한 인덱스의 배열 요소를 출력하고 사용한 인덱스 목록에 추가합니다.
+
+    if(selectedIndex < 35 || selectedIndex > 0) {
+    setRandomArray(hardQuestion[selectedIndex].detail);
+    setUsedIndexes([...usedIndexes, selectedIndex]);
+    } else {
+        setModal(true);
+        return;
+    }
+
+  };
+
+    return (
+      <div className="bg-[#FFFBDC] lg:mx-96 py-2 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center">
+      
+      <div className="grid grid-cols-3 place-content-center py-2">
+        <button type="button" onClick={() => router.back()}>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 text-[#2A52BE] ml-2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+          </svg>
+        </button>
+
+        <h1 className="text-[#2A52BE]">HARD</h1>
+      </div>
+      
+      <div className="border-b-2 border-[#2A52BE]"></div>
+
+      <Modal modal={modal} setModal={setModal}/>
+
+      <div className="bg-[#2A52BE] rounded-xl m-4 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+      
+        <div className="bg-[#D9D9D9]/30 border-y-4 border-y-[#FFFBDC]-500 py-10 mx-12 text-center py-32">
+            {usedIndexes.length > 35 || usedIndexes.length === 0 ? (
+                <p className="text-[#FFFFFF] px-2 text-lg">하단의 버튼을 눌러주세요!<br/> Press the button at the bottom</p>
+                  ) : 
+                  (
+                      <div className="px-2 text-lg">
+                          <p className="text-[#FFFFFF] whitespace-pre-line">{randomArray}</p>
+                      </div>
+                  )
+                
+                }
+        </div>
+
+          <div className="grid place-content-center">
+            <img src="../icon_button.png" onClick={() => getRandomArrayElement()} className="mt-12 w-36 h-36"/>
+          </div>
+      </div>
+      <br />
+      {/* <button type="button" onClick={openDetailModal}>normal 모달</button>
+
+      <ReviewModal modal={modal} setModal={setModal}/> */}
+      </div>
+  )
+}
