@@ -127,6 +127,11 @@ export default function Middle() {
             imageUrl:
             '',
         },
+        {
+            detail: '구X와 헤어진지 얼마나 됐나요? 기한이?',
+            imageUrl:
+            '',
+        },
     // More projects...
 ]
 

@@ -18,7 +18,7 @@ export default function normal() {
             },
             {
                 id : 1,
-                detail: '요즘 가장 즐겨듣는 \n 노래는 무엇인가요? \n 좋아하는 가수는 누구인가요?',
+                detail: '요즘 가장 즐겨듣는 \n 노래는 무엇인가요? \n 그 노래에서 가장 좋아하는 부분의 가사를 말해주세요.',
                 imageUrl:
                 '',
             },
@@ -217,6 +217,12 @@ export default function normal() {
             {
                 id : 34,
                 detail: '당신이 중요하게 생각하는 \n 신념이나 조언이 있나요?',
+                imageUrl:
+                '',
+            },
+            {
+                id : 34,
+                detail: '새로운 모임에서 새로운 인연을 깊게 사귈 생각이 있나요?',
                 imageUrl:
                 '',
             },

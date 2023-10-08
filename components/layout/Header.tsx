@@ -4,7 +4,6 @@ export default function Header() {
     const tabs = [
         { name: 'HOME', href: '/', current: true },
         { name: 'GAME', href: '/game/game', current: false },
-        { name: 'LOGIN', href: '/login/login', current: false },
       ]
       
     return(
